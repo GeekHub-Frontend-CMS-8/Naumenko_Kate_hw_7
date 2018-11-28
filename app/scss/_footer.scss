@@ -1,0 +1,86 @@
+.bottom {
+  padding: 15px 0 50px;
+  display: flex;
+  justify-content: center;
+
+  .row {
+    padding: 0 20px;
+    justify-content: start;
+    text-align: start;
+    border-top: 1px solid #c7c7c7;
+
+    .nav {
+      text-align: start;
+
+      .navbar-brand {
+        padding-bottom: 20px;
+      }
+
+      .nav-link {
+        color: $primary-color;
+        font: #{15px}/$primary-line-height $primary-font;
+      }
+    }
+  }
+}
+
+.logo {
+  padding-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font: $tertiary-font-size $primary-font;
+
+}
+.footer-text,
+.nav-link {
+  padding: inherit;
+}
+
+.footer-text {
+  margin: 20px 0 40px;
+  color: $tertiary-color;
+  font: #{$primary-font-size}/$primary-line-height $primary-font
+}
+
+.address,
+.info {
+  margin-top: 35px;
+}
+
+.phone-number {
+  color: #31384d;
+  font: 30px $secondary-font;
+}
+
+.mode {
+  margin-bottom: 40px;
+  color: $tertiary-color;
+  font: 12px/2.5 $primary-font;
+}
+
+@media only screen and (min-width: 960px) {
+  .bottom {
+    .row {
+      align-items: baseline;
+
+      .footer-logo,
+      .address,
+      .info {
+        margin: 0;
+      }
+
+      .nav {
+        top: -10px;
+
+        .navbar-brand {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .logo {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,38 @@
+.links {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+
+  .row {
+    text-align: start;
+
+    .links-wrapper {
+      padding: 0 25px;
+
+      .btn {
+        margin-bottom: 60px;
+        padding: 10px 10px 10px 25px;
+        background-color: #f4f4f4;
+        color: $primary-color;
+        font: $primary-font-size $primary-font;
+      }
+
+      .btn-blog {
+        margin-bottom: 0;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.links-title {
+  margin-bottom: 40px;
+  color: #d3d1da;
+  font: 28px $secondary-font;
+}
+
+.links-text {
+  margin: 20px 0 35px;
+  color: $tertiary-color;
+  font: #{13px}/$primary-line-height $primary-font;
+}

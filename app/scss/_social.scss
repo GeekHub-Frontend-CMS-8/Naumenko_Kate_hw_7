@@ -1,0 +1,126 @@
+.social {
+  padding: 120px 0 60px;
+  justify-content: center;
+  display: flex;
+
+  .carousel-inner {
+    min-width: 400px;
+  }
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .userpic {
+    margin-right: 25px;
+  }
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 25px;
+  font: 400 17px $tertiary-font;
+
+  .appeal {
+    color: $primary-color;
+    display: contents;
+  }
+}
+
+.name {
+  text-align: start;
+
+  .user-name {
+    color: #474747;
+    font: #{$tertiary-font-size}/$secondary-line-height $secondary-font;
+  }
+}
+
+.nickname,
+.time{
+  color: $primary-color;
+  font: $secondary-font-size $primary-font;
+}
+
+.time {
+  margin-bottom: 30px;
+  color: $tertiary-color;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(24%) sepia(7%) saturate(15%) hue-rotate(49deg) brightness(106%) contrast(90%);
+}
+
+.social-btn-wrap {
+  margin: 30px 0;
+
+  .social-btn {
+    position: relative;
+    margin-bottom: 20px;
+    width: 280px;
+    height: 50px;
+    font: #{$fourth-seniority-font-size}/$primary-line-height $primary-font;
+
+    .fa-social {
+      position: absolute;
+      left: 25px;
+      top: 15px;
+      font-size: 20px;
+    }
+  }
+}
+
+
+.github-btn {
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+.fa-social.fa-github {
+  color: #000;
+}
+
+.twitter-btn {
+  background-color: #26a6d1;
+  color: $secondary-color;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: $secondary-color;
+}
+
+.fa-social.fa-facebook-f,
+.fa-social.fa-twitter {
+  color: $secondary-color;
+}
+
+.followers {
+  color: $tertiary-color;
+  font: $primary-font-size $primary-font;
+}
+
+@media only screen and (min-width: 960px) {
+  .social .btn-block {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-btn {
+    width: 240px;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial {
+    font: #{20px}/$primary-line-height $tertiary-font;
+  }
+}

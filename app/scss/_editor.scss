@@ -1,0 +1,50 @@
+.editor {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0 60px;
+
+  .row {
+    margin: 0;
+
+    .btn-lg {
+      padding: 15px 65px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      border-color: $primary-color;
+      background-color: $primary-color;
+      font: $fourth-seniority-font-size $secondary-font;
+    }
+  }
+
+  .under-btn {
+    color: $tertiary-color;
+    font: 400 $primary-font-size $primary-font;
+  }
+}
+  
+.position {
+  position: relative;
+
+  .btn-block {
+    position: absolute;
+    top: -150px;
+  }
+
+  .editor-title {
+    color: #635c73;
+    text-transform: uppercase;
+  }
+
+  .editor-text {
+    margin: 55px 0 40px;
+    color: #5b5b5b;
+    font: #{$secondary-font-size}/$secondary-line-height $tertiary-font;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .position .editor-text {
+    color: #323232;
+    font-size: $fourth-seniority-font-size;
+  }
+}

@@ -1,0 +1,48 @@
+.subscribe {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 20px;
+  background-color: #f4f4f4;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .subscribe-title {
+      color: #323232;
+      font: #{30px}/$secondary-line-height $secondary-font;
+    }
+  }
+}
+
+.form-inline {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-control {
+    min-width: 210px;
+    max-width: 310px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 25px;
+
+    &::placeholder {
+      color: #c8cbcf;
+      font: #{$primary-font-size}/$primary-line-height $primary-font;
+    }
+
+  }
+
+  .btn {
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 25px;
+    color: $secondary-color;
+    font: #{13px}/$primary-line-height $primary-font;
+  }
+}
